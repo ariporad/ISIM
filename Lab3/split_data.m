@@ -52,9 +52,9 @@ scatter(X, Y);
 plot(trendline_X, trendline_Y, '-');
 
 
-plot(test_measured_voltage, test_predicted_weight, 'b+')
+% plot(test_measured_voltage, test_predicted_weight, 'b+')
 
-plot(linspace(80, 160, 5), ones(5, 1) .* test_known_weight);
+% plot(linspace(80, 160, 5), ones(5, 1) .* test_known_weight);
 
 legend("Calibration Measurement", sprintf("Calibration Trendline (C = %1.2fV + %1.2f)", B(1), B(2)), "Humidity Capacitance Measurement", sprintf("Known Humidity Capacitance (%0.1fpF, Error: %1.2f%%)", test_known_weight, test_error * 100), 'Location', 'southeast');
 hold off;
